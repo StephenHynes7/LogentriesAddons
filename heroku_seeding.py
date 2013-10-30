@@ -413,7 +413,7 @@ def createTag(LOG_KEY,TAG_NAMES,TAG_PATTERNS):
 
 			})
 			response = urllib.urlopen("http://api.logentries.com", params)
-			print "Creating tag " + TAG_NAMES[idx].
+			print "Creating tag " + TAG_NAMES[idx]
 
 def createGraph(LOG_KEY,graph):
 		print "Creating Report."
