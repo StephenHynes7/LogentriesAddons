@@ -21,333 +21,333 @@ PG_EVENT_COLOR=["E62E2E","FFFF00","E68A2E","E65C2E","2E8A8A","8A0000","005CE6","
 
 
 PG_GRAPH="""{
-    "widgets": [
-        {
-            "descriptor_id": "le.user-image",
-            "options": {
-                "title": "Heroku Postgres",
-                "url": "https://raw.github.com/StephenHynes7/LogentriesHerokoImages/master/heroku-postgres-logo.png",
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "1"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-timeline",
-            "options": {
-                "title": "Postgres Slow Queries",
-                "tags_to_show": [
-                    "PG Duration > 50ms"
-                ],
-                "style": [],
-                "position": {
-                    "width": "4",
-                    "height": "1",
-                    "row": "2",
-                    "column": "1"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-bars-summary",
-            "options": {
-                "title": "Postgres Errors",
-                "tags_to_show": [
-                    "PGError Column",
-                    "PGError Operator",
-                    "PGError prepared statement",
-                    "PGError SSL SYSCALL",
-                    "PGError: Table-name"
-                ],
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "2"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-timeline",
-            "options": {
-                "title": "Postgres",
-                "tags_to_show": [
-                    "PG Client Connect Reset",
-                    "PG Connection-Limit",
-                    "PG Data Not Received",
-                    "PG Role-Name"
-                ],
-                "style": [],
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "3"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-table",
-            "options": {
-                "title": "Postgres Events",
-                "tags_to_show": [
-                    "PG Client Connect Reset",
-                    "PG Connection-Limit",
-                    "PG Data Not Received",
-                    "PG Duration > 50ms",
-                    "PG Forking Not Supported",
-                    "PG Permission Denied",
-                    "PG Role-Name",
-                    "PGError Column",
-                    "PGError Operator",
-                    "PGError prepared statement",
-                    "PGError SSL SYSCALL",
-                    "PGError: Table-name"
-                ],
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "4"
-                }
-            }
-        }
-    ],
-    "custom_widget_descriptors": {}
+	"widgets": [
+		{
+			"descriptor_id": "le.user-image",
+			"options": {
+				"title": "Heroku Postgres",
+				"url": "https://raw.github.com/StephenHynes7/LogentriesHerokoImages/master/heroku-postgres-logo.png",
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "1"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-timeline",
+			"options": {
+				"title": "Postgres Slow Queries",
+				"tags_to_show": [
+					"PG Duration > 50ms"
+				],
+				"style": [],
+				"position": {
+					"width": "4",
+					"height": "1",
+					"row": "2",
+					"column": "1"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-bars-summary",
+			"options": {
+				"title": "Postgres Errors",
+				"tags_to_show": [
+					"PGError Column",
+					"PGError Operator",
+					"PGError prepared statement",
+					"PGError SSL SYSCALL",
+					"PGError: Table-name"
+				],
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "2"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-timeline",
+			"options": {
+				"title": "Postgres",
+				"tags_to_show": [
+					"PG Client Connect Reset",
+					"PG Connection-Limit",
+					"PG Data Not Received",
+					"PG Role-Name"
+				],
+				"style": [],
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "3"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-table",
+			"options": {
+				"title": "Postgres Events",
+				"tags_to_show": [
+					"PG Client Connect Reset",
+					"PG Connection-Limit",
+					"PG Data Not Received",
+					"PG Duration > 50ms",
+					"PG Forking Not Supported",
+					"PG Permission Denied",
+					"PG Role-Name",
+					"PGError Column",
+					"PGError Operator",
+					"PGError prepared statement",
+					"PGError SSL SYSCALL",
+					"PGError: Table-name"
+				],
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "4"
+				}
+			}
+		}
+	],
+	"custom_widget_descriptors": {}
 }
 """
 
 AMQP_GRAPHS="""{
-    "widgets": [
-        {
-            "descriptor_id": "le.user-image",
-            "options": {
-                "title": "CloudAMQP",
-                "url": "https://raw.github.com/StephenHynes7/LogentriesHerokoImages/master/rabbit_256.png",
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "1"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-bars-summary",
-            "options": {
-                "title": "CloudAMPQ Events",
-                "tags_to_show": [
-                    "AMQP Blocked Connections-Limit",
-                    "AMQP Blocked Transfer-Limit",
-                    "AMQP Connections-Ok",
-                    "AMQP Disconnected Channels-Limit",
-                    "AMQP Disconnected Consumers-Limit",
-                    "AMQP Transfer-Ok"
-                ],
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "3"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-table",
-            "options": {
-                "title": "CloudAMPQ Events",
-                "tags_to_show": [
-                    "AMQP Blocked Connections-Limit",
-                    "AMQP Blocked Transfer-Limit",
-                    "AMQP Connections-Ok",
-                    "AMQP Disconnected Channels-Limit",
-                    "AMQP Disconnected Consumers-Limit",
-                    "AMQP Transfer-Ok"
-                ],
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "2"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-timeline",
-            "options": {
-                "title": "CloudAMPQ Events Timeline",
-                "tags_to_show": [
-                    "AMQP Blocked Connections-Limit",
-                    "AMQP Blocked Transfer-Limit",
-                    "AMQP Connections-Ok",
-                    "AMQP Disconnected Channels-Limit",
-                    "AMQP Disconnected Consumers-Limit",
-                    "AMQP Transfer-Ok"
-                ],
-                "style": [],
-                "position": {
-                    "width": "4",
-                    "height": "1",
-                    "row": "2",
-                    "column": "1"
-                }
-            }
-        }
-    ],
-    "custom_widget_descriptors": {}
+	"widgets": [
+		{
+			"descriptor_id": "le.user-image",
+			"options": {
+				"title": "CloudAMQP",
+				"url": "https://raw.github.com/StephenHynes7/LogentriesHerokoImages/master/rabbit_256.png",
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "1"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-bars-summary",
+			"options": {
+				"title": "CloudAMPQ Events",
+				"tags_to_show": [
+					"AMQP Blocked Connections-Limit",
+					"AMQP Blocked Transfer-Limit",
+					"AMQP Connections-Ok",
+					"AMQP Disconnected Channels-Limit",
+					"AMQP Disconnected Consumers-Limit",
+					"AMQP Transfer-Ok"
+				],
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "3"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-table",
+			"options": {
+				"title": "CloudAMPQ Events",
+				"tags_to_show": [
+					"AMQP Blocked Connections-Limit",
+					"AMQP Blocked Transfer-Limit",
+					"AMQP Connections-Ok",
+					"AMQP Disconnected Channels-Limit",
+					"AMQP Disconnected Consumers-Limit",
+					"AMQP Transfer-Ok"
+				],
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "2"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-timeline",
+			"options": {
+				"title": "CloudAMPQ Events Timeline",
+				"tags_to_show": [
+					"AMQP Blocked Connections-Limit",
+					"AMQP Blocked Transfer-Limit",
+					"AMQP Connections-Ok",
+					"AMQP Disconnected Channels-Limit",
+					"AMQP Disconnected Consumers-Limit",
+					"AMQP Transfer-Ok"
+				],
+				"style": [],
+				"position": {
+					"width": "4",
+					"height": "1",
+					"row": "2",
+					"column": "1"
+				}
+			}
+		}
+	],
+	"custom_widget_descriptors": {}
 }"""
 
 ADEPT_GRAPH="""{
-    "widgets": [
-        {
-            "descriptor_id": "le.user-image",
-            "options": {
-                "title": "Adept Scale",
-                "url": "https://raw.github.com/StephenHynes7/LogentriesHerokoImages/master/logo-47ee48a6336cb2a990fe01500f5ddc93.png",
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "1"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-timeline",
-            "options": {
-                "title": "Adept Scale Timeline",
-                "tags_to_show": [
-                    "AS 1-9 dynos",
-                    "AS 10-19 dynos",
-                    "AS 20-29 dynos",
-                    "AS 30-39 dynos",
-                    "AS 40-49 dynos",
-                    "AS >50 dynos"
-                ],
-                "style": [],
-                "position": {
-                    "width": "4",
-                    "height": "1",
-                    "row": "3",
-                    "column": "1"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-radial-gauge",
-            "options": {
-                "title": "Scaling Dyno 1-9",
-                "event": "AS 1-9 dynos",
-                "high_threshold": "100",
-                "high_threshold_rate": "Per Day",
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "2"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-radial-gauge",
-            "options": {
-                "title": "Scaling Dyno 10-19",
-                "event": "AS 10-19 dynos",
-                "high_threshold": "100",
-                "high_threshold_rate": "Per Day",
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "3"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-radial-gauge",
-            "options": {
-                "title": "Scaling Dyno 20-29",
-                "event": "AS 20-29 dynos",
-                "high_threshold": "100",
-                "high_threshold_rate": "Per Day",
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "1",
-                    "column": "4"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-radial-gauge",
-            "options": {
-                "title": "Scaling Dyno 30-39",
-                "event": "AS 30-39 dynos",
-                "high_threshold": "100",
-                "high_threshold_rate": "Per Day",
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "2",
-                    "column": "1"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-radial-gauge",
-            "options": {
-                "title": "Scaling Dyno 40-49",
-                "event": "AS 30-39 dynos",
-                "high_threshold": "100",
-                "high_threshold_rate": "Per Day",
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "2",
-                    "column": "2"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-radial-gauge",
-            "options": {
-                "title": "Scaling Dynos >50",
-                "event": "AS 30-39 dynos",
-                "high_threshold": "100",
-                "high_threshold_rate": "Per Day",
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "2",
-                    "column": "3"
-                }
-            }
-        },
-        {
-            "descriptor_id": "le.plot-table",
-            "options": {
-                "title": "Adept Scale Events",
-                "tags_to_show": [
-                    "AS 1-9 dynos",
-                    "AS 10-19 dynos",
-                    "AS 20-29 dynos",
-                    "AS 30-39 dynos",
-                    "AS 40-49 dynos",
-                    "AS >50 dynos"
-                ],
-                "position": {
-                    "width": "1",
-                    "height": "1",
-                    "row": "2",
-                    "column": "4"
-                }
-            }
-        }
-    ],
-    "custom_widget_descriptors": {}
+	"widgets": [
+		{
+			"descriptor_id": "le.user-image",
+			"options": {
+				"title": "Adept Scale",
+				"url": "https://raw.github.com/StephenHynes7/LogentriesHerokoImages/master/logo-47ee48a6336cb2a990fe01500f5ddc93.png",
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "1"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-timeline",
+			"options": {
+				"title": "Adept Scale Timeline",
+				"tags_to_show": [
+					"AS 1-9 dynos",
+					"AS 10-19 dynos",
+					"AS 20-29 dynos",
+					"AS 30-39 dynos",
+					"AS 40-49 dynos",
+					"AS >50 dynos"
+				],
+				"style": [],
+				"position": {
+					"width": "4",
+					"height": "1",
+					"row": "3",
+					"column": "1"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-radial-gauge",
+			"options": {
+				"title": "Scaling Dyno 1-9",
+				"event": "AS 1-9 dynos",
+				"high_threshold": "100",
+				"high_threshold_rate": "Per Day",
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "2"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-radial-gauge",
+			"options": {
+				"title": "Scaling Dyno 10-19",
+				"event": "AS 10-19 dynos",
+				"high_threshold": "100",
+				"high_threshold_rate": "Per Day",
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "3"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-radial-gauge",
+			"options": {
+				"title": "Scaling Dyno 20-29",
+				"event": "AS 20-29 dynos",
+				"high_threshold": "100",
+				"high_threshold_rate": "Per Day",
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "1",
+					"column": "4"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-radial-gauge",
+			"options": {
+				"title": "Scaling Dyno 30-39",
+				"event": "AS 30-39 dynos",
+				"high_threshold": "100",
+				"high_threshold_rate": "Per Day",
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "2",
+					"column": "1"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-radial-gauge",
+			"options": {
+				"title": "Scaling Dyno 40-49",
+				"event": "AS 30-39 dynos",
+				"high_threshold": "100",
+				"high_threshold_rate": "Per Day",
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "2",
+					"column": "2"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-radial-gauge",
+			"options": {
+				"title": "Scaling Dynos >50",
+				"event": "AS 30-39 dynos",
+				"high_threshold": "100",
+				"high_threshold_rate": "Per Day",
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "2",
+					"column": "3"
+				}
+			}
+		},
+		{
+			"descriptor_id": "le.plot-table",
+			"options": {
+				"title": "Adept Scale Events",
+				"tags_to_show": [
+					"AS 1-9 dynos",
+					"AS 10-19 dynos",
+					"AS 20-29 dynos",
+					"AS 30-39 dynos",
+					"AS 40-49 dynos",
+					"AS >50 dynos"
+				],
+				"position": {
+					"width": "1",
+					"height": "1",
+					"row": "2",
+					"column": "4"
+				}
+			}
+		}
+	],
+	"custom_widget_descriptors": {}
 }"""
 
 
@@ -402,20 +402,20 @@ def accountEventsAlreadyExist(LOG_KEY,TAG_NAMES,TAG_PATTERNS):
 		return True
 
 def createTag(LOG_KEY,TAG_NAMES,TAG_PATTERNS):
-    for idx, val in enumerate(TAG_ID):
-        if idx < len(TAG_NAMES):
-            params = urllib.urlencode({
-                'request':'set_tagfilter',
-                'user_key':USER_KEY,
-                'log_key': LOG_KEY,
-                'name': TAG_NAMES[idx],
-                'pattern': TAG_PATTERNS[idx],
-                'tags': TAG_ID[idx],
-                'tagfilter_key':''
+	for idx, val in enumerate(TAG_ID):
+		if idx < len(TAG_NAMES):
+			params = urllib.urlencode({
+				'request':'set_tagfilter',
+				'user_key':USER_KEY,
+				'log_key': LOG_KEY,
+				'name': TAG_NAMES[idx],
+				'pattern': TAG_PATTERNS[idx],
+				'tags': TAG_ID[idx],
+				'tagfilter_key':''
 
-            })
-            response = urllib.urlopen("http://api.logentries.com", params)
-            print "Creating tag " + TAG_NAMES[idx]
+			})
+			response = urllib.urlopen("http://api.logentries.com", params)
+			print "Creating tag " + TAG_NAMES[idx]
 
 def createGraph(LOG_KEY,graph):
 		print "Creating Graph"
@@ -438,35 +438,35 @@ def createPGData(LOG_KEY):
 	createGraph(LOG_KEY,PG_GRAPH)
 
 def query_yes_no_quit(question, default="yes"):
-    """Ask a yes/no/quit question via raw_input() and return their answer.
+	"""Ask a yes/no/quit question via raw_input() and return their answer.
 
-    "question" is a string that is presented to the user.
-    "default" is the presumed answer if the user just hits <Enter>.
-        It must be "yes" (the default), "no", "quit" or None (meaning
-        an answer is required of the user).
+	"question" is a string that is presented to the user.
+	"default" is the presumed answer if the user just hits <Enter>.
+		It must be "yes" (the default), "no", "quit" or None (meaning
+		an answer is required of the user).
 
-    The "answer" return value is one of "yes", "no" or "quit".
-    """
-    valid = {"yes":"yes",   "y":"yes",    "ye":"yes",
-             "no":"no",     "n":"no",}
-    if default == None:
-        prompt = " [y/n] "
-    elif default == "yes":
-        prompt = " [Y/n] "
-    elif default == "no":
-        prompt = " [y/N] "
-    else:
-        raise ValueError("invalid default answer: '%s'" % default)
+	The "answer" return value is one of "yes", "no" or "quit".
+	"""
+	valid = {"yes":"yes",   "y":"yes",    "ye":"yes",
+			 "no":"no",     "n":"no",}
+	if default == None:
+		prompt = " [y/n] "
+	elif default == "yes":
+		prompt = " [Y/n] "
+	elif default == "no":
+		prompt = " [y/N] "
+	else:
+		raise ValueError("invalid default answer: '%s'" % default)
 
-    while 1:
-        sys.stdout.write(question + prompt)
-        choice = raw_input().lower()
-        if default is not None and choice == '':
-            return default
-        elif choice in valid.keys():
-            return valid[choice]
-        else:
-            sys.stdout.write("Please respond with 'yes', 'no' or 'quit'.\n")
+	while 1:
+		sys.stdout.write(question + prompt)
+		choice = raw_input().lower()
+		if default is not None and choice == '':
+			return default
+		elif choice in valid.keys():
+			return valid[choice]
+		else:
+			sys.stdout.write("Please respond with 'yes', 'no' or 'quit'.\n")
 
 def createPartnerData(partner,LOG_KEY):
 	if(partner == "Adept Scale"):
@@ -493,7 +493,7 @@ def getLogs(partner):
 		user_answer =query_yes_no_quit("Do we wish to add default "+partner+" tags and graphs for log " +log["name"] +"?")
 		print user_answer
 		if(user_answer=="yes"):
-            print "Creating default data for log " + log["name"]
+			print "Creating default data for log " + log["name"]
 			createPartnerData(partner,log["key"])
 		else:
 			print "Not creating default data for log " + log["name"]
