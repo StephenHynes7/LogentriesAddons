@@ -402,22 +402,23 @@ def accountEventsAlreadyExist(LOG_KEY,TAG_NAMES,TAG_PATTERNS):
 		return True
 
 def createTag(LOG_KEY,TAG_NAMES,TAG_PATTERNS):
-	for idx, val in enumerate(TAG_ID):
-		params = urllib.urlencode({
-			'request':'set_tagfilter',
-			'user_key':USER_KEY,
-			'log_key': LOG_KEY,
-			'name': TAG_NAMES[idx],
-			'pattern': TAG_PATTERNS[idx],
-			'tags': TAG_ID[idx],
-			'tagfilter_key':''
+    for idx, val in enumerate(TAG_ID):
+        if idx < len(TAG_NAMES):
+            params = urllib.urlencode({
+                'request':'set_tagfilter',
+                'user_key':USER_KEY,
+                'log_key': LOG_KEY,
+                'name': TAG_NAMES[idx],
+                'pattern': TAG_PATTERNS[idx],
+                'tags': TAG_ID[idx],
+                'tagfilter_key':''
 
-		})
-		response = urllib.urlopen("http://api.logentries.com", params)
-		print "Creating tag " + TAG_NAMES[idx]
+            })
+            response = urllib.urlopen("http://api.logentries.com", params)
+            print "Creating tag " + TAG_NAMES[idx]
 
 def createGraph(LOG_KEY,graph):
-		print "Creating graph"
+		print "Creating Graph"
 		data=urllib.quote(graph)
 		params ="request=set_dashboard&log_key="+LOG_KEY+"&dashboard="+data
 		req= urllib2.Request("https://api.logentries.com",params)
@@ -492,8 +493,8 @@ def getLogs(partner):
 		user_answer =query_yes_no_quit("Do we wish to add default "+partner+" tags and graphs for log " +log["name"] +"?")
 		print user_answer
 		if(user_answer=="yes"):
+            print "Creating default data for log " + log["name"]
 			createPartnerData(partner,log["key"])
-			print "Creating default data for log " + log["name"]
 		else:
 			print "Not creating default data for log " + log["name"]
 
