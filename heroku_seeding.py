@@ -360,9 +360,9 @@ TAG_ID=[]
 
 
 def createEvent(LOG_KEY,TAG_NAMES,TAG_PATTERNS,EVENT_COLOR):
-	print "Checking for existing Events"
+	print "Checking for existing Events."
 	if accountEventsAlreadyExist(LOG_KEY,TAG_NAMES,TAG_PATTERNS):
-		print "Events already exist"
+		print "Events already exist."
 	else:
 		for idx, val in enumerate(TAG_NAMES):
 			params = urllib.urlencode ({
@@ -378,7 +378,6 @@ def createEvent(LOG_KEY,TAG_NAMES,TAG_PATTERNS,EVENT_COLOR):
 			})
 			response = urllib2.urlopen("http://api.logentries.com", params)
 			response_dict = json.loads(response.read())
-			print response_dict['tag_id']
 			TAG_ID.append(response_dict['tag_id'])
 	createTag(LOG_KEY,TAG_NAMES,TAG_PATTERNS)
 
@@ -394,7 +393,6 @@ def accountEventsAlreadyExist(LOG_KEY,TAG_NAMES,TAG_PATTERNS):
 	for id in TAG_NAMES:
 		for item in response_dict['tags']:
 			if item['title'] == id:
-				print item['id']
 				TAG_ID.append(item['id'])
 	if len(TAG_ID) == 0:
 		return False
@@ -415,10 +413,10 @@ def createTag(LOG_KEY,TAG_NAMES,TAG_PATTERNS):
 
 			})
 			response = urllib.urlopen("http://api.logentries.com", params)
-			print "Creating tag " + TAG_NAMES[idx]
+			print "Creating tag " + TAG_NAMES[idx].
 
 def createGraph(LOG_KEY,graph):
-		print "Creating Graph"
+		print "Creating Report."
 		data=urllib.quote(graph)
 		params ="request=set_dashboard&log_key="+LOG_KEY+"&dashboard="+data
 		req= urllib2.Request("https://api.logentries.com",params)
@@ -503,7 +501,7 @@ def getLogs(partner):
 if __name__ == '__main__':
 	# Map command line arguments to function arguments.
 	USER_KEY=sys.argv[1]
-	print "Logentries provides default tags and support for the following partner Heroku Addons"
+	print "Logentries provides default Tags and Reports for the following partner Heroku Addons"
 	print "(1): Heroku Postgres"
 	print "(2): Adept Scale"
 	print "(3): CloudAMQP"
