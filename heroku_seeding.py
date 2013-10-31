@@ -501,6 +501,9 @@ def getLogs(partner):
 if __name__ == '__main__':
 	# Map command line arguments to function arguments.
 	USER_KEY=sys.argv[1]
+	print "DISCLAIMER: The following script will REPLACE any existing Graph that you have on log that you choose."
+	print "If you are unsure as to what to do contact support@logentries.com."
+	print ""
 	print "Logentries provides default Tags and Reports for the following partner Heroku Addons"
 	print "(1): Heroku Postgres"
 	print "(2): Adept Scale"
