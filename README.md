@@ -12,3 +12,4 @@ When running the script you will be given three options for the creation of defa
 
 Once selected the script will automatically do the work for you and notify you when it is finished.
 
+For more information go to https://devel.logentries.com/doc/addons/.
